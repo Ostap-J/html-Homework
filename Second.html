@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Form</title>
+
+<body>
+	<form id="fs-frm" name="department-contact-form" accept-charset="utf-8"
+		action="https://formspree.io/flysostapj@gmail.com" method="post">
+		<fieldset id="fs-frm-inputs">
+			<label for="full-name">Full Name</label>
+			<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <br>
+			<label for="email-address">Email Address</label>
+			<input type="email" name="_replyto" id="email-address" placeholder="Enter your email" required="">
+			<br>
+            <label for="department">Department</label>
+			<select name="department" id="department" required="">
+      <option value="Select" selected="" disabled="">Select</option>
+      <option value="Motivation">Motivation</option>
+      <option value="Care">Care</option>
+      <option value="Self Education">Self Education</option>
+      <option value="Help Me">Help Me</option>
+    </select>
+    <br>
+			<label for="message">Message</label>
+			<textarea rows="5" name="message" id="message" placeholder="Please enter your question" required=""></textarea>
+            <br>
+            <input type="radio" name="PersonaGender" id="Gender" required>
+            <option for="Gender" value="Male">Male Female</option>
+            <option for="Gender" value="Female">Female</option>
+            <option for="Gender" value="Other">Other</option>
+			<input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+  </fieldset>
+			<input type="submit" value="Send Message">
+
+</form>
+</body>
+
+</html>
